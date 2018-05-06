@@ -1,0 +1,30 @@
+article {
+    margin: 30px 0;
+
+    .page-title {
+        margin-bottom: 20px;
+    }
+}
+
+.page-template-default {
+    background-color: #f5f2f2;
+
+    .content {
+        min-height:100%;
+        position:relative;
+        margin-bottom: 162px;
+    }
+
+    #services {
+        padding: 0px;
+    
+        .service-items {
+            margin: 30px 0;
+        }
+    }
+}
+
+// .page-content {
+//     padding:10px;
+//     padding-bottom:162px;   /* Height of the footer */
+//  }

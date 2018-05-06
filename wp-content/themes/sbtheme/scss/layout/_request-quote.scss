@@ -1,0 +1,23 @@
+#quote-form{
+    background-color: $primary-color;
+    
+    h2, h3, p, label {
+        color: white;
+    }
+
+    h3 {
+        border-bottom: 2px solid white;
+    }
+
+    label, input, textarea, select{
+        width: 100%;
+    }
+
+    .controls {
+        border-top: 2px solid white;
+        padding: 10px 0;
+        .btn {
+            width: auto;
+        }
+    }
+}

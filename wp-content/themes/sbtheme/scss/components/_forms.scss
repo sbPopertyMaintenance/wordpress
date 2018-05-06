@@ -1,0 +1,16 @@
+form {
+    input, select, textarea {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    select {
+        background-color: white;
+    }
+
+    label.required::after {
+        content: "*";
+        color: red;
+        margin-left: 5px;
+    }
+}

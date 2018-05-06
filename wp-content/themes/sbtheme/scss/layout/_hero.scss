@@ -1,0 +1,27 @@
+
+.hero {
+    background-image: url(../../images/HeaderPhoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    
+    h1 {
+        margin: 0px;
+        color: white;
+    }
+
+    p{
+        font-weight: 100;
+        font-style: italic;
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    margin-top: 70px;
+}

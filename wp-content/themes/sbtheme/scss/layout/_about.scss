@@ -1,0 +1,14 @@
+#about {
+    p {
+        font-size: 1.2em;
+    }
+    .row {
+        margin: 20px 0;
+    }
+
+    @media (max-width: 768px){
+        .about-image {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+nav {
+    padding: 10px;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+
+    .container {
+        @include clearfix();
+    }
+
+    img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .nav-content {
+
+        .info {
+            @include clearfix();
+        }
+
+        .contact-item {
+            font-size: 14px;
+        }
+
+        p {
+            margin: 0px;
+            font-weight: 300;
+        }
+
+        small {
+            margin-left: 5px;
+            font-size: 1em;
+        }
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            color: $primary-color;
+            margin: 0 10px;
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-size: 16px;
+            }
+
+        }
+
+        &#menu-main-menu {
+
+            li {
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+}
+
+.customize-support nav {
+    top: 32px;
+}
