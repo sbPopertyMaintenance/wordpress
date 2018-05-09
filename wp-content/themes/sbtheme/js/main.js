@@ -53,6 +53,11 @@ jQuery('document').ready(function(){
   
     
   }
+
+  jQuery('#quote-form').on('submit', function(event){
+    event.preventDefault();
+    send_mail();
+  })
   
   jQuery('.nav-burger-menu').on('click', function(){
     jQuery(this).toggleClass('change');
