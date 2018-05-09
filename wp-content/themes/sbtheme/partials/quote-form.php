@@ -9,7 +9,7 @@
                 </div>
             </div>
 
-            <form action="" method="post" id="request-quote">
+            <form action="<?php echo admin_url('admin-ajax.php'); ?>" method="POST" id="request-quote" enctype="multipart/form-data">
 
                 <h3>Contact Information</h3>
                 <div class="row">
@@ -72,7 +72,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="controls">
-                            <div class="g-recaptcha" data-sitekey="6LdAYFgUAAAAAJe-FjV_75lv0Izs0CRaV66Cvk4s"></div>
+                            <!-- <div class="g-recaptcha" data-sitekey="6LdAYFgUAAAAAJe-FjV_75lv0Izs0CRaV66Cvk4s"></div> -->
+                            <input type="hidden" name="action" value="send_quote_request">
                             <input type="submit" value="Submit Quote Request" class="btn btn-primary">
                         </div>
                     </div>

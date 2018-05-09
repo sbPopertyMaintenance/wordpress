@@ -1,31 +1,23 @@
-$('document').ready(function(){
+jQuery('document').ready(function(){
 
   // form validation
-  $('#request-quote').on('submit', function(event){
-    event.preventDefault();
+  jQuery('#request-quote').ajaxForm({
+    success: function(resp) {
+      console.log(resp);
+    },
+    error: function(resp) {
+      console.log(resp);
+    }
+  })
 
-    var path = '/wp-content/themes/sbtheme/services/email/quote.php';
+  /////////
 
-    $.ajax({
-      type: "POST",
-      url: path,
-      data: $("#request").serialize(), // serializes the form's elements.
-      success: function(data)
-      {
-          alert('success'); // show response from the php script.
-      },
-      error: function(data) {
-        alert('fail');
-      }
-    });
+  jQuery('.nav-burger-menu').on('click', function(){
+    jQuery(this).toggleClass('change');
+    jQuery('body').toggleClass('mobile-open');
   });
 
-  $('.nav-burger-menu').on('click', function(){
-    $(this).toggleClass('change');
-    $('body').toggleClass('mobile-open');
-  });
-
-  $('.slider').slick({
+  jQuery('.slider').slick({
       dots: true,
       arrows: true,
       infinite: false,
