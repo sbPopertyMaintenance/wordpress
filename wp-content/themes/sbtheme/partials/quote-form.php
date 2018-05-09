@@ -1,3 +1,4 @@
+<?php include(get_template_directory() . '/services/email/quote.php'); ?>
 <section id="quote-form">
     <div class="container">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
