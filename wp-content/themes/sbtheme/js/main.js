@@ -3,33 +3,11 @@
 
 jQuery('document').ready(function(){
   function send_mail(){
-    var firstName = document.getElementById('sb-first-name').value,
-        lastName = document.getElementById('sb-last-name').value,
-        street = document.getElementById('sb-street').value,
-        city = document.getElementById('sb-city').value,
-        postal = document.getElementById('sb-postal').value,
-        email = document.getElementById('sb-email').value,
-        phone = document.getElementById('sb-phone').value,
-        serviceType = document.getElementById('sb-service-type').value,
-        message = document.getElementById('sb-message').value;
     
     var request = jQuery.post( {
       url: myVar.ajax_url,
-      data: {
-        action: 'send_quote_request',
-        data: {
-          'sb-first-name': firstName,
-          'sb-last-name': lastName,
-          'sb-street': street,
-          'sb-city': city,
-          'sb-postal': postal,
-          'sb-email': email,
-          'sb-phone': phone,
-          'sb-service-type': serviceType,
-          'sb-message': message,
-          'g-recaptcha-response': grecaptcha.getResponse()
-        }
-      }
+      action: 'send_quote_request',
+      data: $("#quote-form").serialize()
     } );
   
     request.done( function(resp) {
