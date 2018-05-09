@@ -18,19 +18,19 @@
         
 
             
-            $first_name    = stripslashes(trim($_POST['first-name']));
-            $last_name    = stripslashes(trim($_POST['last-name']));
+            $first_name    = stripslashes(trim($_POST['sb-first-name']));
+            $last_name    = stripslashes(trim($_POST['sb-last-name']));
 
-            $email   = stripslashes(trim($_POST['email']));
-            $phone   = stripslashes(trim($_POST['phone']));
+            $email   = stripslashes(trim($_POST['sb-email']));
+            $phone   = stripslashes(trim($_POST['sb-phone']));
 
-            $address = stripslashes(trim($_POST['street']));
-            $city = stripslashes(trim($_POST['city']));
-            $postal_code = stripslashes(trim($_POST['postal']));
+            $address = stripslashes(trim($_POST['sb-street']));
+            $city = stripslashes(trim($_POST['sb-city']));
+            $postal_code = stripslashes(trim($_POST['sb-postal']));
 
-            $service = stripslashes(trim($_POST['service-type']));
+            $service = stripslashes(trim($_POST['sb-service-type']));
 
-            $message = stripslashes(trim($_POST['message']));
+            $message = stripslashes(trim($_POST['sb-message']));
 
             $subject = 'Quote Request';    
             $pattern = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';

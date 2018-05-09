@@ -13,46 +13,46 @@
                 <h3>Contact Information</h3>
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <label for="first-name" class="required">First Name</label>
-                        <input class="form-control" type="text" name="first-name" id="first-name" placeholder="John" required>
+                        <label for="sb-first-name" class="required">First Name</label>
+                        <input class="form-control" type="text" name="sb-first-name" id="sb-first-name" placeholder="John" required>
                     </div>
                     <div class="col-sm-6 form-group" class="required">
-                        <label for="last-name">Last Name</label>
-                        <input class="form-control" type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        <label for="sb-last-name">Last Name</label>
+                        <input class="form-control" type="text" name="sb-last-name" id="sb-last-name" placeholder="Doe" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <label for="street">Street Address</label>
-                        <input class="form-control" type="text" name="street" id="street" placeholder="263 Caledonia Rd">
+                        <label for="sb-street">Street Address</label>
+                        <input class="form-control" type="text" name="sb-street" id="sb-street" placeholder="263 Caledonia Rd">
                     </div>
                     <div class="col-sm-4 form-group">
-                        <label for="city">City</label>
-                        <input class="form-control" type="text" name="city" id="city" placeholder="Dartmouth">
+                        <label for="sb-city">City</label>
+                        <input class="form-control" type="text" name="sb-city" id="sb-city" placeholder="Dartmouth">
                     </div>
                     <div class="col-sm-2 form-group">
-                        <label for="postal">Postal Code</label>
-                        <input class="form-control" type="text" name="postal" id="postal" placeholder="B2X 1L5">
+                        <label for="sb-postal">Postal Code</label>
+                        <input class="form-control" type="text" name="sb-postal" id="sb-postal" placeholder="B2X 1L5">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <label for="email" class="required">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="info@sbpropertymaintenance.ca" required>
+                        <label for="sb-email" class="required">Email</label>
+                        <input class="form-control" type="email" name="sb-email" id="sb-email" placeholder="info@sbpropertymaintenance.ca" required>
                     </div>
                     <div class="col-sm-4 form-group">
-                        <label for="phone">Phone</label>
-                        <input class="form-control" type="tel" name="phone" id="phone" placeholder="902-555-5555">
+                        <label for="sb-phone">Phone</label>
+                        <input class="form-control" type="tel" name="sb-phone" id="sb-phone" placeholder="902-555-5555">
                     </div>
                 </div>
 
                 <h3>Project Details</h3>
                 <div class="row">
                     <div class="col-sm-5 form-group">
-                        <label for="service-type" class="required">Service Type</label>
-                        <select name="service-type" id="service-type" required>
+                        <label for="ssb-ervice-type" class="required">Service Type</label>
+                        <select name="sb-service-type" id="sb-service-type" required>
                             <option value="" disabled selected>What are you looking for?</option>
                             <option value="landscaping">Landscaping</option>
                             <option value="renovations">Renovations</option>
@@ -63,8 +63,8 @@
 
                 <div class="row">
                     <div class="col-sm-12 form-group">
-                        <label for="message" class="required">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Tell us a little more about what you're looking for ..." required></textarea>
+                        <label for="sb-message" class="required">Message</label>
+                        <textarea name="sb-message" id="sb-message" cols="30" rows="10" placeholder="Tell us a little more about what you're looking for ..." required></textarea>
                     </div>
                 </div>
 
