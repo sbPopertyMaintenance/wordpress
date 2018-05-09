@@ -9,7 +9,7 @@
                 </div>
             </div>
 
-            <form action="<?php  echo get_bloginfo( 'template_directory' );?>/services/email/quote.php" method="post" id="request-quote">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post" id="request-quote">
 
                 <h3>Contact Information</h3>
                 <div class="row">
