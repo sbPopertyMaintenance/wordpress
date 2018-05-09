@@ -1,4 +1,8 @@
 <?php
+
+function test_quote(){
+    wp_send_json_success( 'Email was sent successfully!' );
+}
 function send_quote(){
     $template_direcotry = get_template_directory();
 
