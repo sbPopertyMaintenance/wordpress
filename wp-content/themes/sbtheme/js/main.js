@@ -1,5 +1,25 @@
 $('document').ready(function(){
 
+  // form validation
+  $('#request-quote').on('submit', function(event){
+    event.preventDefault();
+
+    var path = '/wp-content/themes/sbtheme/services/email/quote.php';
+
+    $.ajax({
+      type: "POST",
+      url: path,
+      data: $("#request").serialize(), // serializes the form's elements.
+      success: function(data)
+      {
+          alert('success'); // show response from the php script.
+      },
+      error: function(data) {
+        alert('fail');
+      }
+    });
+  });
+
   $('.nav-burger-menu').on('click', function(){
     $(this).toggleClass('change');
     $('body').toggleClass('mobile-open');

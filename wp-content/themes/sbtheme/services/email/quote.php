@@ -166,12 +166,14 @@
 
                 $a = mail($email_to, $subject, $body, $headers);
                 
-                $sms = mail('9028095430@@msg.koodomobile.com', 'Delivery Request', 'There is a new Delivery Request!', $headers);
+                $sms = mail('19028095430@@msg.koodomobile.com', 'Delivery Request', 'There is a new Delivery Request!', $headers);
 
                 if($a && $sms){
                     $emailSent = true;
+                    echo 'Success';
                 }else{
                     $emailFailed = true;
+                    echo 'Form failed to submit.';
                 }
             }
             

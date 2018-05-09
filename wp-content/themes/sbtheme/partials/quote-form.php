@@ -1,4 +1,4 @@
-<?php include(get_template_directory() . '/services/email/quote.php'); ?>
+
 <section id="quote-form">
     <div class="container">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -9,7 +9,7 @@
                 </div>
             </div>
 
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post" id="request-quote">
+            <form action="" method="post" id="request-quote">
 
                 <h3>Contact Information</h3>
                 <div class="row">
