@@ -52,5 +52,6 @@
         crossorigin="anonymous"></script>
         <script type="text/javascript" src="<?php echo get_bloginfo( 'template_directory' );?>/js/main.js"></script>
         <script type="text/javascript" src="<?php echo get_bloginfo( 'template_directory' );?>/slick/slick.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </body>
 </html>

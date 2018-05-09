@@ -8,7 +8,7 @@
                 </div>
             </div>
 
-            <form action="" id="request-quote">
+            <form action="<?php  echo get_bloginfo( 'template_directory' );?>/services/email/quote.php" method="post" id="request-quote">
 
                 <h3>Contact Information</h3>
                 <div class="row">
@@ -71,6 +71,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="controls">
+                            <div class="g-recaptcha" data-sitekey="6LdAYFgUAAAAAJe-FjV_75lv0Izs0CRaV66Cvk4s"></div>
                             <input type="submit" value="Submit Quote Request" class="btn btn-primary">
                         </div>
                     </div>

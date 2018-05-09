@@ -1,7 +1,7 @@
 <nav class="top-nav">
     <div class="container">
         <div class="nav-logo pull-left">
-            <img class="logo" src="<?php echo get_bloginfo( 'template_directory' );?>/images/logo-primary.jpg" alt="S&B Property Maintenance">
+            <a href="/"><img class="logo" src="<?php echo get_bloginfo( 'template_directory' );?>/images/logo-primary.jpg" alt="S&B Property Maintenance"></a>
         </div>
 
         <div class="nav-content pull-right">
