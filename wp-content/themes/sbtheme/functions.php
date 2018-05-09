@@ -16,7 +16,6 @@ function enqueue_jquery_form(){
 }
 
 add_action( 'wp_ajax_nopriv_send_quote_request', 'send_quote_request' );
-add_action( 'wp_ajax_send_quote_request', 'send_quote_request' );
 include( get_template_directory() . '/services/email/quote.php' );
 function send_quote_request(){
   send_quote();
