@@ -13,7 +13,7 @@ jQuery('document').ready(function(){
     success: function(resp) {
       // scroll to top of section
       jQuery('html, body').animate({
-        scrollTop: $("#quote-form").offset().top
+        scrollTop: jQuery("#quote-form").offset().top
       }, 500);
 
       jQuery('#request-quote .alert-success').removeClass('hidden');
@@ -21,7 +21,7 @@ jQuery('document').ready(function(){
     error: function(resp) {
       // scroll to top of section
       jQuery('html, body').animate({
-        scrollTop: $("#quote-form").offset().top
+        scrollTop: jQuery("#quote-form").offset().top
       }, 500);
 
       jQuery('#request-quote .alert-danger').removeClass('hidden');
