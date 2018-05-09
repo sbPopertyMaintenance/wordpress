@@ -10,6 +10,19 @@ function my_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 
+add_action( 'wp_enqueue_scripts', 'enqueue_jquery_form' );
+function enqueue_jquery_form(){
+  wp_enqueue_script( 'jquery-form' );
+}
+
+add_action( 'wp_ajax_nopriv_send_quote_request', 'send_quote_request' );
+add_action( 'wp_ajax_send_quote_request', 'send_quote_request' );
+include( get_template_directory() . '/services/email/quote.php' );
+function send_quote_request(){
+  send_quote();
+}
+
+
 // THEME CUSTOMIZER SETTINGS
 $args = array(
 	'flex-width'    => true,
@@ -40,12 +53,3 @@ function sb_stylesheets(){
 }    
 add_action( 'wp_enqueue_scripts', 'sb_stylesheets' );
 
-add_action( 'wp_enqueue_scripts', 'enqueue_jquery_form' );
-function enqueue_jquery_form(){
-  wp_enqueue_script( 'jquery-form' );
-}
-
-add_action( 'wp_ajax_send_quote_request', 'send_quote_request' );
-function send_quote_request(){
-  wp_send_json_success( $_POST );
-}

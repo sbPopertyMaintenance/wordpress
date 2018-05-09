@@ -1,4 +1,5 @@
 <?php
+function send_quote(){
     $template_direcotry = get_template_directory();
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -170,10 +171,10 @@
 
                 if($a && $sms){
                     $emailSent = true;
-                    echo 'Success';
+                    wp_send_json_success( 'Email was sent successfully!' );
                 }else{
                     $emailFailed = true;
-                    echo 'Form failed to submit.';
+                    wp_send_json_error( 'There was an error' );
                 }
             }
             
@@ -184,4 +185,6 @@
         $bad = array("content-type","bcc:","to:","cc:");
         return str_replace($bad,"",$string);
     }
+}
+
 ?>

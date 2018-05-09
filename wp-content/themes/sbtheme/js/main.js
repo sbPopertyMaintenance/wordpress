@@ -2,11 +2,29 @@ jQuery('document').ready(function(){
 
   // form validation
   jQuery('#request-quote').ajaxForm({
+    beforeSubmit: function(arr, $form, options) { 
+      if( jQuery('#request-quote .alert-success').hasClass('hidden') == false ){
+        jQuery('#request-quote .alert-success').addClass('hidden');
+      }
+      if( jQuery('#request-quote .alert-danger').hasClass('hidden') == false ){
+        jQuery('#request-quote .alert-danger').addClass('hidden');
+      }
+    },
     success: function(resp) {
-      console.log(resp);
+      // scroll to top of section
+      jQuery('html, body').animate({
+        scrollTop: $("#quote-form").offset().top
+      }, 500);
+
+      jQuery('#request-quote .alert-success').removeClass('hidden');
     },
     error: function(resp) {
-      console.log(resp);
+      // scroll to top of section
+      jQuery('html, body').animate({
+        scrollTop: $("#quote-form").offset().top
+      }, 500);
+
+      jQuery('#request-quote .alert-danger').removeClass('hidden');
     }
   })
 

@@ -2,7 +2,12 @@
 <section id="quote-form">
     <div class="container">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
-
+            <div class="alert alert-success hidden" role="alert">
+                <strong>Success!</strong>We have received your quote request and will contact you as soon as possible.
+            </div>
+            <div class="alert alert-danger hidden" role="alert">
+                <strong>Oops, looks like something went wrong!</strong> Please try again. If this issue persists please contact us at info@sbpropertymaintenance.ca
+            </div>
             <div class="row">
                 <div class="text-center">
                     <h2>Request a Quote</h2>
