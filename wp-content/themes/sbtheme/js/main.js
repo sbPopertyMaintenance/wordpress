@@ -13,7 +13,7 @@ jQuery('document').ready(function(){
         serviceType = document.getElementById('sb-service-type').value,
         message = document.getElementById('sb-message').value;
     
-    var request = $.post( {
+    var request = jQuery.post( {
       url: myVar.ajax_url,
       data: {
         action: 'send_quote_request',
