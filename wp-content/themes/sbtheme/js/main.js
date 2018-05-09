@@ -26,7 +26,8 @@ jQuery('document').ready(function(){
           'sb-email': email,
           'sb-phone': phone,
           'sb-service-type': serviceType,
-          'sb-message': message
+          'sb-message': message,
+          'g-recaptcha-response': grecaptcha.getResponse()
         }
       }
     } );
