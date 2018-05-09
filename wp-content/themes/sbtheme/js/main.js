@@ -7,7 +7,7 @@ jQuery('document').ready(function(){
     var request = jQuery.post( {
       url: myVar.ajax_url,
       action: 'send_quote_request',
-      data: $("#quote-form").serialize()
+      data: jQuery("#quote-form").serialize()
     } );
   
     request.done( function(resp) {
