@@ -18,16 +18,18 @@ jQuery('document').ready(function(){
       url: myVar.ajax_url,
       data: {
         action: 'send_quote_request',
-        'sb-first-name': firstName,
-        'sb-last-name': lastName,
-        'sb-street': street,
-        'sb-city': city,
-        'sb-postal': postal,
-        'sb-email': email,
-        'sb-phone': phone,
-        'sb-service-type': serviceType,
-        'sb-message': message,
-        'g-recaptcha-response': grecaptcha.getResponse()
+          sb_first_name: firstName,
+          sb_last_name: lastName,
+          sb_street: street,
+          sb_city: city,
+          sb_postal: postal,
+          sb_email: email,
+          sb_phone: phone,
+          sb_service_type: serviceType,
+          sb_message: message,
+          g_recaptcha_response: grecaptcha.getResponse()
+
+
       }
     } );
   

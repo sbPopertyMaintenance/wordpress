@@ -7,6 +7,7 @@ add_action( 'init', 'register_main_menu' );
 
 add_action( 'wp_ajax_nopriv_send_quote_request', 'send_quote_request' );
 include( get_template_directory() . '/services/email/quote.php' );
+
 function send_quote_request(){
   send_quote();
 }
@@ -20,12 +21,6 @@ function my_theme_scripts() {
   
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
-
-// add_action( 'wp_enqueue_scripts', 'enqueue_jquery_form' );
-// function enqueue_jquery_form(){
-//   wp_enqueue_script( 'jquery-form' );
-// }
-
 
 
 // THEME CUSTOMIZER SETTINGS

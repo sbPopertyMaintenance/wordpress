@@ -171,7 +171,7 @@ function send_quote(){
 
                 $a = mail($email_to, $subject, $body, $headers);
                 
-                $sms = mail('19028095430@@msg.koodomobile.com', 'Delivery Request', 'There is a new Delivery Request!', $headers);
+                $sms = mail('9028095430@msg.koodomobile.com, 9028771692@msg.telus.com', 'Delivery Request', 'There is a new Delivery Request!', $headers);
 
                 if($a && $sms){
                     $emailSent = true;
@@ -185,10 +185,11 @@ function send_quote(){
         }  
     }
 
-    function clean_string($string) {
-        $bad = array("content-type","bcc:","to:","cc:");
-        return str_replace($bad,"",$string);
-    }
+
 }
 
+function clean_string($string) {
+    $bad = array("content-type","bcc:","to:","cc:");
+    return str_replace($bad,"",$string);
+}
 ?>
