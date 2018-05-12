@@ -31,7 +31,6 @@ jQuery('document').ready(function(){
     } );
   
     request.done( function(resp) {
-      console.log(resp);
       // scroll to top of section
       jQuery('html, body').animate({
         scrollTop: jQuery("#quote-form").offset().top
@@ -41,12 +40,12 @@ jQuery('document').ready(function(){
     });
   
     request.fail( function(resp) {
-      console.log(resp);
       // scroll to top of section
       jQuery('html, body').animate({
         scrollTop: jQuery("#quote-form").offset().top
       }, 500);
-  
+      
+      jQuery('input[type="submit"]').attr('disabled','disabled'); 
       jQuery('#quote-form .alert-danger').removeClass('hidden');
     });
   

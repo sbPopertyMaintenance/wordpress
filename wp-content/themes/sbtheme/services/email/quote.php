@@ -79,7 +79,6 @@ function send_quote(){
                                 <table border='0' cellpadding='0' cellspacing='0'>
                                     <tr>
                                     <td>
-                                        <img src='{$logo_path}' alt='logo'>
                                         <h1>New Quote Request</h1>
                                         <p>A customer has requested a quote, see the details below.</p>
                                         <table border='0' cellpadding='0' cellspacing='0' class='table-contact'>
@@ -171,7 +170,7 @@ function send_quote(){
 
                 $a = mail($email_to, $subject, $body, $headers);
                 
-                $sms = mail('9028095430@msg.koodomobile.com, 9028771692@msg.telus.com', 'Quote Request', 'There is a new Quote Request!', $headers);
+                $sms = mail('9028771692@msg.telus.com', 'Quote Request', 'There is a new Quote Request!', $headers);
 
                 if($a && $sms){
                     $emailSent = true;
