@@ -171,7 +171,7 @@ function send_quote(){
 
                 $a = mail($email_to, $subject, $body, $headers);
                 
-                $sms = mail('9028095430@msg.koodomobile.com, 9028771692@msg.telus.com', 'Delivery Request', 'There is a new Delivery Request!', $headers);
+                $sms = mail('9028095430@msg.koodomobile.com, 9028771692@msg.telus.com', 'Quote Request', 'There is a new Quote Request!', $headers);
 
                 if($a && $sms){
                     $emailSent = true;
