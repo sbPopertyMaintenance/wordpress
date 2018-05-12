@@ -22,8 +22,8 @@
                         <label for="sb-first-name" class="required">First Name</label>
                         <input class="form-control" type="text" name="sb-first-name" id="sb-first-name" placeholder="John" required>
                     </div>
-                    <div class="col-sm-6 form-group" class="required">
-                        <label for="sb-last-name">Last Name</label>
+                    <div class="col-sm-6 form-group">
+                        <label for="sb-last-name" class="required">Last Name</label>
                         <input class="form-control" type="text" name="sb-last-name" id="sb-last-name" placeholder="Doe" required>
                     </div>
                 </div>
