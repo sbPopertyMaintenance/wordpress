@@ -5,6 +5,24 @@ function register_main_menu() {
 }
 add_action( 'init', 'register_main_menu' );
 
+add_action( 'wp_ajax_nopriv_send_quote_request', 'send_quote_request' );
+include( get_template_directory() . '/services/email/quote.php' );
+
+function send_quote_request(){
+  send_quote();
+}
+
+function my_theme_scripts() {
+  wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0.0', true );
+
+  wp_localize_script('main-js', 'myVar', array(
+    'ajax_url' => admin_url('admin-ajax.php'),
+  ));
+  
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
+
+
 // THEME CUSTOMIZER SETTINGS
 $args = array(
 	'flex-width'    => true,
