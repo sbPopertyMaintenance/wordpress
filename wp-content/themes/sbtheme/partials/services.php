@@ -24,7 +24,7 @@
                             <div class="text-center">
                                 <h2>Services</h2>
                                 <div class="col-md-8 col-lg-6 col-centered">
-                                    <p><?php echo $post->teaser_text; ?></p>
+                                    <?php the_content(); ?>
                                 </div>
                             </div>
                         <?php endif; ?>
