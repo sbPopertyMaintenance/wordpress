@@ -16,7 +16,7 @@
                     <?php $image = get_field('post-image'); ?>
                     
                     <div class="col-xs-12 col-sm-8">
-                        <?php echo $post->teaser_text ?>
+                        <?php the_content(); ?>
                         <div class="row">
                             <a href="/about" class="btn btn-outline-dark">Learn More</a>
                         </div>
