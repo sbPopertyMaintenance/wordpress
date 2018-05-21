@@ -35,8 +35,6 @@
             </div>
         <?php endif; ?>
         <div class="row service-items">
-            <div class="col-md-12 col-lg-10 col-lg-offset-1">
-
             
             <?php // The Query ?>
             <?php $the_query = new WP_Query( array('post_type' => 'service') ); ?>
@@ -48,11 +46,17 @@
 
                     <?php $image = get_field('service-image'); ?>
                     
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="service-item">
-                            <img src="<?php echo $image['url']; ?>" alt="">
-                            <div class="slide-title">
-                                <h3><?php echo $post->post_title; ?></h3> 
+                            <div class="service-image-container"
+                                style="background-image: url(<?php echo $image['url']; ?>)">
+                                <div class="service-item-fade"></div>
+                            </div>
+                            <div class="service-item-body">
+                                <div class="slide-title">
+                                    <h3><?php echo $post->post_title; ?></h3> 
+                                </div>
+                                <?php echo the_content(); ?>
                             </div>
                         </div>
                     </div>
@@ -61,12 +65,11 @@
                 
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
-            </div>
         </div>
 
         <?php if ($home): ?>
             <div class="row text-center">
-                <a href="/services" class="btn btn-outline-dark view-all-services">View All Services</a>
+                <a href="/services" class="btn btn-outline view-all-services">Learn More</a>
             </div>
         <?php endif; ?>
 
